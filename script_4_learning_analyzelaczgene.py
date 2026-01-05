@@ -48,14 +48,14 @@ print (answer)
 def mRNAtranscription (DNAinput):
     RNAoutput = ""
     for character in DNAinput:
-        if character == "a":
-            RNAoutput += "u"
-        elif character == "t":
-            RNAoutput += "a"
-        elif character == "g":
-            RNAoutput += "c"
-        elif character == "c":
-            RNAoutput += "g"
+        if character == "a" or character == "A":
+            RNAoutput += "U"
+        elif character == "t" or character == "T":
+            RNAoutput += "A"
+        elif character == "g" or character == "G":
+            RNAoutput += "C"
+        elif character == "c" or character == "C":
+            RNAoutput += "G"
     return RNAoutput
 
 RNAdata = mRNAtranscription(lacOPgene)

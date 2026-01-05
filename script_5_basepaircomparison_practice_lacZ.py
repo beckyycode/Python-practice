@@ -29,6 +29,12 @@ FASTAdata = clean_data(lacOP_FASTA)
 
 
 def sequence_comparison (seqa, seqb):
+    """
+    Docstring for sequence_comparison
+    
+    :param seqa: Input any DNA/RNA sequence
+    :param seqb: This sequence will be compared to seqa
+    """
   
     zipped_seq = zip (seqa, seqb)
     # print (list(zipped_seq))
@@ -43,7 +49,7 @@ def sequence_comparison (seqa, seqb):
     return combined_sequence
 
 lacopcombined = sequence_comparison (data, FASTAdata)
-print ("Final Answer",lacopcombined)
+# print (lacopcombined)
 
 
 
