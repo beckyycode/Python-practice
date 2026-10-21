@@ -1,0 +1,3 @@
+seq1 = input('Enter DNA sequence 1: ')
+seq2 = input('Enter DNA sequence 2: ')
+print (f'Your concatonated seq is {seq1 + seq2}')
